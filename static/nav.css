@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--orange);
+  padding: 0;
+  margin: 0;
+  height: 15vh;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "contact name download";
+  align-items: center;
+  margin: 0 1vw;
+  padding: 0;
+  border-style: solid;
+  border-right: 2px var(--brown);
+  border-left: 2px var(--brown);
+  font-size: 20px;
+  width: 100%;
+}
+
+.bar-item {
+  display: block;
+  margin: 0 2vw;
+}
+
+#contact {
+  grid-area: contact;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 0.5vw;
+}
+
+#name {
+  grid-area: name;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+#name h1 {
+  margin: 0;
+}
+
+#download {
+  grid-area: download;
+}

@@ -1,0 +1,14 @@
+:root {
+  --orange: #da4d30;
+  --brown: #32251c;
+  --beige: #fee2be;
+  --green: #4dccbd;
+  --dark-green: #5b8e7d;
+}
+
+body {
+  background-color: var(--beige);
+  color: var(--brown);
+  margin: 0;
+  font-family: Candara;
+}

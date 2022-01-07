@@ -11,6 +11,12 @@
   <link href="static/nav.css" rel="stylesheet" type="text/css">
   <!-- CONTENT CSS -->
   <link href="static/content.css" rel="stylesheet" type="text/css">
+  <!-- EDUCATION CSS -->
+  <link href="static/education.css" rel="stylesheet" type="text/css">
+  <!-- SKILLS CSS -->
+  <link href="static/skills.css" rel="stylesheet" type="text/css">
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- JAVASCRIPT -->
   <script src='static/open_modal.js'></script>
 </head>
@@ -23,6 +29,7 @@
       </div>
       <div class="bar-item" id="name">
         <h1>RAHULKUMAR RAI</h1>
+        <h5>Software Engineer</h5>
       </div>
       <div class="bar-item" id="download">
         <h4>Download CV</h4>
@@ -50,12 +57,149 @@
       </div>
     </div>
 
-    <div id="myModal" class="modal">
+    <div class="modal" id="about-modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+          <span class="close">&times;</span>
+          <h1>About me</h1>
+          <p style="text-align: left;">
+            Enthusing people with "something" inspiring and creative has always been a thrill for me. In search of that
+            "something", I found myself studying Software Engineering at the University of Sheffield. It's a bit selfish, 
+            but I've realized developing beautiful and useful software is my way of experiencing the thrill. I've always wanted to be inventive
+            but also wasn't afraid of applying myself when building that "something", so software and it's infinite potentials 
+            is the perfect thing for me.
+            <br><br>
+            Below are a few sentences, I would use to describe myself:
+          </p>
+          <ul style="text-align: left;">
+            <li>I believe being able to adapt to my circumstances is my greatest strength.</li>
+            <li>I really really enjoy teamwork, for me it is top 3 things I love about building software.</li>
+            <li>I am a "forever student" of anything that stands outside the box.</li>
+            <li>My friends would call me "charismatic", "wierd" and sometimes "over-optimistic" but they won't call me to dinner.</li>
+          </ul>
       </div>
     </div>
+
+    <div class="modal" id="education-modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Education</h1>
+          <div class="edu-grid">
+            <div class="col-1">
+              <h2>University of Sheffield</h2>
+              <h3>Sept 2018 - Present</h3>
+            </div>
+            <div class="col-2">
+              <h2>BEng Software Engineer with a Year in Industry</h2>
+              <h3>1st Class in Year 1 and 2</h3>
+              <h4>Some Modules:</h4>
+              <div class="mod-col-1">
+                <ul>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1002&org=SHEFFIELD&start=28-Sep-2009&loc=SHEFFIELD&cal=ACAD%20YR&year=2018" target="_blank">Foundations of Computer Science</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1005&org=SHEFFIELD&start=28-Sep-2009&loc=SHEFFIELD&cal=ACAD%20YR&year=2018" target="_blank">Machines and Intelligence</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1003&org=SHEFFIELD&start=28-Sep-2009&loc=SHEFFIELD&cal=ACAD%20YR&year=2018" target="_blank">Java Programming</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1008&org=SHEFFIELD&start=29-Sep-2014&loc=SHEFFIELD&cal=AUT%20SEM&year=2018" target="_blank">Web and Internet Technology</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1001&org=SHEFFIELD&start=29-Sep-2014&loc=SHEFFIELD&cal=ACAD%20YR&year=2018" target="_blank">Introduction to Software Engineering</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1006&org=SHEFFIELD&start=28-Sep-2009&loc=SHEFFIELD&cal=ACAD%20YR&year=2018" target="_blank">Devices and Networks</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM1009&org=SHEFFIELD&start=09-Feb-2015&loc=SHEFFIELD&cal=SPR%20SEM&year=2018" target="_blank">Introduction to Algorithms and Data Structures</a></li>
+                </ul>
+              </div>
+              <div class="mod-col-2">
+                <ul>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM2004&org=SHEFFIELD&start=27-Sep-2010&loc=SHEFFIELD&cal=AUT%20SEM&year=2019" target="_blank">Data Driven Computing</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM2008&org=SHEFFIELD&start=24-Sep-2018&loc=SHEFFIELD&cal=AUT%20SEM&year=2019" target="_blank">System Design and Security</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM2108&org=SHEFFIELD&start=24-Sep-2018&loc=SHEFFIELD&cal=AUT%20SEM&year=2019" target="_blank">Functional Programming</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM2109&org=SHEFFIELD&start=24-Sep-2018&loc=SHEFFIELD&cal=ACAD%20YR&year=2019" target="_blank">Automata,Computation and Complexity</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM2107&org=SHEFFIELD&start=04-Feb-2019&loc=SHEFFIELD&cal=SPR%20SEM&year=2019" target="_blank">Logic in Computer Science</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM2009&org=SHEFFIELD&start=10-Feb-2019&loc=SHEFFIELD&cal=SPR%20SEM&year=2019" target="_blank">Robotics</a></li>
+                  <li><a href="https://www.sheffield.ac.uk/programmeregulationsfinder/unit?code=COM3420&org=SHEFFIELD&start=27-Sep-2004&loc=SHEFFIELD&cal=SPR%20SEM&year=2019" target="_blank">Software Hut</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="edu-grid">
+            <div class="col-1">
+              <h2>Internation School Of Seychelles</h2>
+              <h3>Sept 2016 - June 2018</h3>
+            </div>
+            <div class="col-2">
+              <h2>Cambridge A-Levels</h2>
+              <ul>
+                <li><h3>A* in Mathematics and Physics</h3></li>
+                <li><h3>A in Business Studies</h3></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="experience-modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Experience</h1>
+      </div>
+    </div>
+
+    <div class="modal" id="skills-modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>My Skills</h1>
+          <h2>Technical Skills</h2>
+          <div class="skill-grid">
+            <div class="skill-col-1">
+              <ul>
+                <h4>Website Development (Front End)</h4>
+                <li><span>HTML5 & CSS</span> <span class="material-icons">check_box</span> <span class="material-icons">check_box_outline_blank</span> <span class="material-icons">check_box_outline_blank</span> <span class="material-icons">check_box_outline_blank</span></li>
+                <li><span>Boostrap</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>TypeScript</span></li>
+                <li><span>Angular</span></li>
+              </ul>
+              <ul>
+                <h4>Website Development (Back End)</h4>
+                <li><span>Python (Flask & Jinja2)</span></li>
+                <li><span>Java Spring Boot</span></li>
+                <li><span>Ruby on Rails</span></li>
+              </ul>
+              <ul>
+                <h4>SQL</h4>
+                <li><span>PostgreSQL</span></li>
+                <li><span>MySQL</span></li>
+                <li><span>SQLite</span></li>
+              </ul>
+              <ul>
+                <h4>Softwares</h4>
+                <li><span>MS Office</span></li>
+                <li><span>Git</span></li>
+                <li><span>Visual Studio</span></li>
+              </ul>
+            </div>
+
+            <div class="skill-col-2">
+              <ul>
+                <h4>Programming Languages</h4>
+                <li><span>C#</span></li>
+                <li><span>Python</span></li>
+                <li><span>Java</span></li>
+                <li><span>Haskell</span></li>
+              </ul>
+              <ul>
+                <h5>Technical Knowledge</h5>
+                <li><span>Software Lifecycle Knowledge</span></li>
+                <li><span>OOP Paradigms</span></li>
+                <li><span>Agile Methodologies</span></li>
+                <li><span>Scrum Methodologies</span></li>
+                <li><span>MVVM Pattern</span></li>
+                <li><span>MVC Pattern</span></li>
+                <li><span>Algorithm Design</span></li>
+                <li><span>Data Structure</span></li>
+                <li><span>UML Diagrams</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
   </div>
   
 </body>

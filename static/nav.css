@@ -6,7 +6,7 @@
   background-color: var(--orange);
   padding: 0;
   margin: 0;
-  height: 15vh;
+  height: 17vh;
 }
 
 .bar {
@@ -52,7 +52,7 @@ li {
   text-align: center;
 }
 
-#name h1 {
+#name h1, h5 {
   margin: 0;
 }
 

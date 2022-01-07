@@ -1,0 +1,53 @@
+.edu-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "col1 col2";
+}
+
+.col-1 {
+  text-align: left;
+  grid-area: col1;
+}
+
+.col-2 {
+  text-align: left;
+  grid-area: col2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr;
+  grid-template-areas: 
+    "top1 top1"
+    "top2 top2"
+    "top3 top3"
+    "mod1 mod2";
+}
+
+.col-2 a {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+h2 {
+  grid-area: top1;
+  margin: 0;
+}
+
+h3 {
+  grid-area: top2;
+  margin: 0;
+}
+
+h4 {
+  grid-area: top3;
+  margin: 0;
+}
+
+.mod-col-1 {
+  grid-area: mod1;
+}
+
+.mod-col-2 {
+  grid-area: mod2;
+}

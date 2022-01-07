@@ -1,0 +1,21 @@
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "col1 col2";
+}
+
+.skill-col-1 {
+  text-align: left;
+  grid-area: col1;
+}
+
+.skill-col-2 {
+  text-align: left;
+  grid-area: col2;
+}
+
+.skill-grid span {
+  color: var(--orange);
+}

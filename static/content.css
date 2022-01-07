@@ -6,8 +6,8 @@
 
 .panel {
   background-color: var(--orange);
-  width: 42vh;
-  height: 70vh;
+  width: 40vh;
+  height: 65vh;
   margin: 1em;
   padding: 1em;
   text-align: center;
@@ -21,9 +21,10 @@
 
 .panel:hover {
   border-radius: 5%;
-  padding: 2em;
+  padding: 1.7em;
   cursor: pointer;
 }
+
 
 #about {
   box-shadow: 5px 5px var(--green);
@@ -53,7 +54,6 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -62,17 +62,41 @@
 .modal-content {
   background-color: #fee2be;
   margin: 2% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid var(--brown);
+  padding: 5px 20px;
+  border: 5px solid var(--brown);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px var(--green);
   width: 80%; /* Could be more or less, depending on screen size */
   height: 80%;
+  text-align: center;
+  overflow: scroll; /* Enable scroll if needed */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin: 7px 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 5px;
 }
 
 /* The Close Button */
 .close {
   color: var(--orange);
   float: right;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: bold;
 }
 

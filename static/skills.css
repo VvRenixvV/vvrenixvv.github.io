@@ -16,6 +16,25 @@
   grid-area: col2;
 }
 
-.skill-grid span {
+.flex-list li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: circle;
+}
+
+.orange-span {
   color: var(--orange);
+}
+
+.green-span {
+  color: var(--green);
+}
+
+.d-green-span {
+  color: var(--dark-green);
+}
+
+.ming-span {
+  color: var(--ming);
 }

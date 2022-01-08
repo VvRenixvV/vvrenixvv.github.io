@@ -13,26 +13,30 @@
   <link href="static/content.css" rel="stylesheet" type="text/css">
   <!-- EDUCATION CSS -->
   <link href="static/education.css" rel="stylesheet" type="text/css">
+  <!-- EXPERIENCE CSS -->
+  <link href="static/experience.css" rel="stylesheet" type="text/css">
   <!-- SKILLS CSS -->
   <link href="static/skills.css" rel="stylesheet" type="text/css">
   <!-- GOOGLE FONTS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- JAVASCRIPT -->
   <script src='static/open_modal.js'></script>
+  <script src='static/toggle_card.js'></script>
 </head>
 <body>
   <div class="navbar">
     <div class="bar">
       <div class="bar-item" id="contact">
-        <li><h4>rairahul19rr@gmail.com</h4></li>
-        <li><h4>LinkedIn</h4></li>
+        <h4><a href="mailto:rairahul19rr@gmail.com" target="_blank">rairahul19rr@gmail.com</a></h4>
+        <h4><a href="https://www.linkedin.com/in/rahulkumar-rai/ " target="_blank">LinkedIn</a></h4>
       </div>
       <div class="bar-item" id="name">
         <h1>RAHULKUMAR RAI</h1>
         <h5>Software Engineer</h5>
       </div>
-      <div class="bar-item" id="download">
-        <h4>Download CV</h4>
+      <div class="bar-item" id="other">
+        <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')" target="_blank">My Projects</a></h4>
+        <h4><a href="static/Rahulkumar Rakeshkumar Rai.pdf" target="_blank">Download CV</a></h4>
       </div>
     </div>
   </div>
@@ -41,25 +45,37 @@
     <div class="flexbox">
       <div id="about" class="panel">
         <h1>About Me</h1>
-        <img src="static/glasses.png" width="275px">
+        <img src="static/glasses.png" width="275vw" style="margin-top: 13vh;">
+        <p style="font-size: 1.5em;">
+          About me as a person, software engineer and my hobbies.
+        </p>
       </div>
       <div id="education" class="panel">
         <h1>Education</h1>
-        <img src="static/education.png" width="250px">
+        <img src="static/education.png" width="250vw">
+        <p style="font-size: 1.5em;">
+          My educational qualifications.
+        </p>
       </div>
       <div id="experience" class="panel">
         <h1>Experience</h1>
-        <img src="static/experience.png" width="210px">
+        <img src="static/experience.png" width="210vw">
+        <p style="font-size: 1.5em;">
+          Places I've worked and volunteered.
+        </p>
       </div>
       <div id="skills" class="panel">
         <h1>Skills</h1>
-        <img src="static/skills.png" width="190px">
+        <img src="static/skills.png" width="190vw">
+        <p style="font-size: 1.5em;">
+          My technical skills.
+        </p>
       </div>
     </div>
 
     <div class="modal" id="about-modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="material-icons close">cancel</span>
           <h1>About me</h1>
           <p style="text-align: left;">
             Enthusing people with "something" inspiring and creative has always been a thrill for me. In search of that
@@ -81,7 +97,7 @@
 
     <div class="modal" id="education-modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="material-icons close">cancel</span>
           <h1>Education</h1>
           <div class="edu-grid">
             <div class="col-1">
@@ -134,53 +150,140 @@
 
     <div class="modal" id="experience-modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="material-icons close">cancel</span>
           <h1>Experience</h1>
+          <div class="card-title">
+          <h2>Web Developer <i>@ University Of Sheffield</i></h2>
+          </div>
+          <div class="card">
+            <h4>OCT - NOV 2021</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
+          <br>
+          <div class="card-title">
+            <h2>Systems Student @ Toyota GB PLC</h2>
+          </div>
+          <div class="card">
+            <h4>AUG 2020 - JULY 2021</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
+          <br>
+          <div class="card-title">
+            <h2>Undergraduate Demonstrator @ Uni Of Sheffield</h2>
+          </div>
+          <div class="card">
+            <h4>OCT - DEC 2021</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
+          <br>
+          <div class="card-title">
+            <h2>Head of Customer Service @ Code Creators, Enactus Sheffield</h2>
+          </div>
+          <div class="card">
+            <h4>SEPT 2019 - JUNE 2020</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
+          <br>
+          <div class="card-title">
+            <h2>Student Mentor @ Code Creators, Enactus Sheffield</h2>
+          </div>
+          <div class="card">
+            <h4>SEPT 2019 - JUNE 2020</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
+          <br>
+          <div class="card-title">
+            <h2>Student Mentor for 1st Year Students @ Uni Of Sheffield</h2>
+          </div>
+          <div class="card">
+            <h4>SEPT 2019 - JUNE 2020</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+          </div>
       </div>
     </div>
 
     <div class="modal" id="skills-modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="material-icons close">cancel</span>
           <h1>My Skills</h1>
           <h2>Technical Skills</h2>
           <div class="skill-grid">
             <div class="skill-col-1">
-              <ul>
-                <h4>Website Development (Front End)</h4>
-                <li><span>HTML5 & CSS</span> <span class="material-icons">check_box</span> <span class="material-icons">check_box_outline_blank</span> <span class="material-icons">check_box_outline_blank</span> <span class="material-icons">check_box_outline_blank</span></li>
-                <li><span>Boostrap</span></li>
-                <li><span>JavaScript</span></li>
-                <li><span>TypeScript</span></li>
-                <li><span>Angular</span></li>
+              <ul class="flex-list">
+                <h4 class="ming-span">Programming Languages</h4>
+                <li><span>Python</span><div>
+                  <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span>
+                </div></li>
+                <li><span>Java</span><div>
+                  <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span>
+                </div></li>
+                <li><span>C#</span><div>
+                  <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box_outline_blank</span>
+                </div></li>
+                <li><span>Haskell</span><div>
+                  <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box</span> <span class="material-icons ming-span">check_box_outline_blank</span>
+                </div></li>
               </ul>
-              <ul>
-                <h4>Website Development (Back End)</h4>
-                <li><span>Python (Flask & Jinja2)</span></li>
-                <li><span>Java Spring Boot</span></li>
-                <li><span>Ruby on Rails</span></li>
+              <ul class="flex-list">
+                <h4 class="orange-span">Website Development (Front End)</h4>
+                <li><span>HTML5 & CSS</span> <div>
+                    <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span>
+                  </div></li>
+                <li><span>Boostrap</span> <div>
+                    <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box_outline_blank</span>
+                  </div></li>
+                <li><span>JavaScript</span> <div>
+                  <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box</span> <span class="material-icons orange-span">check_box_outline_blank</span>
+                </div></li>
               </ul>
-              <ul>
-                <h4>SQL</h4>
-                <li><span>PostgreSQL</span></li>
-                <li><span>MySQL</span></li>
-                <li><span>SQLite</span></li>
+              <ul class="flex-list">
+                <h4 class="green-span">Website Development (Back End)</h4>
+                <li><span>Python Django</span><div>
+                  <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span>
+                </div></li>
+                <li><span>Ruby on Rails</span><div>
+                  <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box</span> <span class="material-icons green-span">check_box_outline_blank</span>
+                </div></li>
               </ul>
-              <ul>
-                <h4>Softwares</h4>
-                <li><span>MS Office</span></li>
-                <li><span>Git</span></li>
-                <li><span>Visual Studio</span></li>
+              <ul class="flex-list">
+                <h4 class="d-green-span">SQL</h4>
+                <li><span>MySQL</span><div>
+                  <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box_outline_blank</span>
+                </div></li>
+                <li><span>SQLite</span><div>
+                  <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box_outline_blank</span>
+                </div></li>
+                <li><span>PostgreSQL</span><div>
+                  <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box</span> <span class="material-icons d-green-span">check_box_outline_blank</span> <span class="material-icons d-green-span">check_box_outline_blank</span>
+                </div></li>
               </ul>
             </div>
 
             <div class="skill-col-2">
               <ul>
-                <h4>Programming Languages</h4>
-                <li><span>C#</span></li>
-                <li><span>Python</span></li>
-                <li><span>Java</span></li>
-                <li><span>Haskell</span></li>
+                <h4>Softwares</h4>
+                <li><span>Git</span></li>
+                <li><span>Unity</span></li>
+                <li><span>Blender</span></li>
+                <li><span>MS Office 365 (+Power Apps, Power Automate, PowerBI)</span></li>
               </ul>
               <ul>
                 <h5>Technical Knowledge</h5>

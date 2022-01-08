@@ -6,9 +6,9 @@
 
 .panel {
   background-color: var(--orange);
-  width: 40vh;
+  width: 19vw;
   height: 65vh;
-  margin: 1em;
+  margin: 2em 1em;
   padding: 1em;
   text-align: center;
   border-style: solid;
@@ -23,6 +23,10 @@
   border-radius: 5%;
   padding: 1.7em;
   cursor: pointer;
+}
+
+.panel img {
+  margin: 10vh 0;
 }
 
 
@@ -62,14 +66,14 @@
 .modal-content {
   background-color: #fee2be;
   margin: 2% auto; /* 15% from the top and centered */
-  padding: 5px 20px;
+  padding: 5px 10px;
   border: 5px solid var(--brown);
   border-radius: 20px;
   box-shadow: 10px 10px 10px var(--green);
   width: 80%; /* Could be more or less, depending on screen size */
   height: 80%;
-  text-align: center;
   overflow: scroll; /* Enable scroll if needed */
+  text-align: center;
 }
 
 /* width */

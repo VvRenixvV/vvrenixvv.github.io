@@ -32,16 +32,7 @@
 
 #contact {
   grid-area: contact;
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0 0.5vw;
+  text-align: center;
 }
 
 #name {
@@ -56,6 +47,17 @@ li {
   margin: 0;
 }
 
-#download {
+#other {
   grid-area: download;
+  text-align: center;
+}
+
+#contact a, #other a {
+  color: var(--brown);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact a:hover, #other a:hover{
+  color: var(--yellow);
 }

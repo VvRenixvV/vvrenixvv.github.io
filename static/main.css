@@ -4,11 +4,14 @@
   --beige: #fee2be;
   --green: #4dccbd;
   --dark-green: #5b8e7d;
+  --ming: #006d77;
+  --yellow: #fac05e;
+  --charcoal: #373f51;
 }
 
 body {
   background-color: var(--beige);
   color: var(--brown);
   margin: 0;
-  font-family: Candara;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  alert("This website is still under construction, so some features might not work correctly on some devices. But please feel free to browse nonetheless, thank you! :)");
+  //alert("This website is still under construction, so some features might not work correctly on some devices. But please feel free to browse nonetheless, thank you! :)");
   // Get the modal
   var modals = document.querySelectorAll(".modal");
 

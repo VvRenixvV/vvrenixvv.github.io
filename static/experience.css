@@ -1,0 +1,37 @@
+.card-title {
+  background-color: var(--dark-green);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin: 0 0 0 10px;
+  text-align: left;
+  height: auto;
+  width: max-content;
+  padding: 0.5vw 1vw 0vw 1vw;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-title:hover {
+  padding: 1vw 1vw 0.2vw 1vw;
+  background-color: var(--green);
+}
+
+.active {
+  padding: 1vw 1vw 0.2vw 1vw;
+  background-color: var(--orange);
+}
+
+.active:hover {
+  background-color: var(--yellow);
+}
+
+.card {
+  display: none;
+  border-radius: 0px 10px 10px 10px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--brown);
+  text-align: left;
+  margin-bottom: 1vh;
+  padding: 1vw;
+}

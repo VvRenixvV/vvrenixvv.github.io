@@ -1,12 +1,12 @@
 .navbar {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   background-color: var(--orange);
   padding: 0;
   margin: 0;
-  height: 17vh;
+  max-height: 17vh;
 }
 
 .bar {
@@ -16,18 +16,22 @@
   grid-template-areas: 
     "contact name download";
   align-items: center;
-  margin: 0 1vw;
-  padding: 0;
+  margin: 1vw;
+  padding: 1vw 0;
   border-style: solid;
   border-right: 2px var(--brown);
   border-left: 2px var(--brown);
-  font-size: 20px;
+  font-size: 1vw;
   width: 100%;
 }
 
 .bar-item {
   display: block;
   margin: 0 2vw;
+}
+
+#nav-list {
+  display: none;
 }
 
 #contact {
@@ -39,7 +43,7 @@
   grid-area: name;
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 1.3em;
   text-align: center;
 }
 
@@ -60,4 +64,52 @@
 
 #contact a:hover, #other a:hover{
   color: var(--yellow);
+}
+
+#nav-icon {
+  display: none;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .navbar {
+    max-height: 45vh;
+  }
+
+  #nav-list {
+    display: none;
+    background-color: var(--orange);
+    text-align: center;
+  }
+
+  #nav-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+    padding: 0.5vh;
+    margin: 0.5vh 0;
+  }
+
+  #nav-list a:hover {
+    color: var(--yellow);
+  }
+
+  #nav-icon {
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+  }
+
+  #nav-icon span {
+    font-size: 4vh;
+  }
+
+  #contact, #other {
+    display: none; 
+  }
+
+  #name {
+    font-size: 15px;
+  }
+
 }

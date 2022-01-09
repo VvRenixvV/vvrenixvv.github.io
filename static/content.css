@@ -110,3 +110,21 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 750px) {
+  .flexbox {
+    flex-flow: column wrap;
+  }
+
+  .panel {
+    width: 70vw;
+    height: max-content;
+    margin: 2vh auto;
+    padding: 1em;
+  }
+
+  .panel img {
+    margin: 5vh 0;
+  }
+}

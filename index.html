@@ -17,11 +17,14 @@
   <link href="static/experience.css" rel="stylesheet" type="text/css">
   <!-- SKILLS CSS -->
   <link href="static/skills.css" rel="stylesheet" type="text/css">
-  <!-- GOOGLE FONTS -->
+  <!-- GOOGLE FONTS/ICONS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- FONTAWESOME KIT -->
+  <script src="https://kit.fontawesome.com/69a0735163.js" crossorigin="anonymous"></script>
   <!-- JAVASCRIPT -->
   <script src='static/open_modal.js'></script>
   <script src='static/toggle_card.js'></script>
+  <script src='static/backToTop.js'></script>
 </head>
 <body>
   <div class="navbar">
@@ -42,19 +45,28 @@
         <span class="material-icons">menu</span>
       </a>
     </div>
+    <div id="icon-menu">
+      <a href="mailto:rairahul19rr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/rahulkumar-rai/ " target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="static/Rahulkumar Rakeshkumar Rai.pdf" target="_blank"><b>CV</b></a>
+    </div>
     <div id="nav-list">
-      <h4><a href="mailto:rairahul19rr@gmail.com" target="_blank">rairahul19rr@gmail.com</a></h4>
-      <h4><a href="https://www.linkedin.com/in/rahulkumar-rai/ " target="_blank">LinkedIn</a></h4>
-      <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')" target="_blank">My Projects</a></h4>
-      <h4><a href="static/Rahulkumar Rakeshkumar Rai.pdf" target="_blank">Download CV</a></h4>
+      <h4><a href="#about">About Me</a></h4>
+      <h4><a href="#education">Education</a></h4>
+      <h4><a href="#experience">Experience</a></h4>
+      <h4><a href="#skills">Skills</a></h4>
+      <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')">My Projects</a></h4>
     </div>
   </div>
+
+  <!--BACK TO TOP-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <div class="content">
     <div class="flexbox">
       <div id="about" class="panel">
         <h1>About Me</h1>
-        <img src="static/glasses.png" width="275vw" style="padding-top: 3vh;">
+        <img src="static/glasses.png" width="275vw" style="padding-top: 3vh;"> 
         <p style="font-size: 1.5em;">
           About me as a person, software engineer and my hobbies.
         </p>

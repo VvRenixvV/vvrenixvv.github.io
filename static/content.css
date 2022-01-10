@@ -14,13 +14,13 @@
   border-style: solid;
   border-width: 4px;
   border-color: var(--brown);
-  border-radius: 0;
+  border-radius: 30px;
   box-shadow: 5px 5px var(--brown);
   transition: 0.5s;
 }
 
 .panel:hover {
-  border-radius: 5%;
+  border-radius: 0;
   padding: 1.7em;
   cursor: pointer;
 }
@@ -109,6 +109,27 @@
   color: var(--brown);
   text-decoration: none;
   cursor: pointer;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--orange); /* Set a background color */
+  color: var(--beige); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-weight: bold;
+}
+
+#myBtn:hover {
+  background-color: var(--brown); /* Add a dark-grey background on hover */
 }
 
 

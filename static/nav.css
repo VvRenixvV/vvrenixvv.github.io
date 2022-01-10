@@ -66,6 +66,10 @@
   color: var(--yellow);
 }
 
+#icon-menu {
+  display: none;
+}
+
 #nav-icon {
   display: none;
 }
@@ -110,6 +114,19 @@
 
   #name {
     font-size: 15px;
+  }
+
+  #icon-menu {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0;
+  }
+
+  #icon-menu a {
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--beige);
   }
 
 }

@@ -74,6 +74,20 @@
   display: none;
 }
 
+#download-btn {
+  padding: 0.5vh 0.5vw;
+  border: solid 3px var(--brown);
+  background-color: var(--beige);
+  box-shadow: 2px 2px var(--yellow);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#download-btn:hover {
+  padding: 0.7vh 0.7vw;
+  box-shadow: 5px 5px 5px var(--yellow);
+}
+
 
 @media only screen and (max-width: 950px) {
   .navbar {

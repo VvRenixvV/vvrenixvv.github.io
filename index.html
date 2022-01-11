@@ -17,6 +17,8 @@
   <link href="static/experience.css" rel="stylesheet" type="text/css">
   <!-- SKILLS CSS -->
   <link href="static/skills.css" rel="stylesheet" type="text/css">
+  <!-- PROJECTS CSS -->
+  <link href="static/projects.css" rel="stylesheet" type="text/css">
   <!-- GOOGLE FONTS/ICONS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- FONTAWESOME KIT -->
@@ -27,6 +29,10 @@
   <script src='static/backToTop.js'></script>
 </head>
 <body>
+  <div id="alert-bar">
+    This website is still under construction, but please feel free to browse through! :)
+    <span class="material-icons" onclick="closeAlert()">cancel</span>
+  </div>
   <div class="navbar">
     <div class="bar">
       <div class="bar-item" id="contact">
@@ -38,7 +44,7 @@
         <h4>Software Engineer</h4>
       </div>
       <div class="bar-item" id="other">
-        <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')" target="_blank">My Projects</a></h4>
+        <!-- <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')" target="_blank">My Projects</a></h4> -->
         <h4><a href="static/Rahulkumar Rakeshkumar Rai.pdf" target="_blank">Download CV</a></h4>
       </div>
       <a href="javascript:void(0);" id="nav-icon" onclick="openMenu()">
@@ -55,7 +61,7 @@
       <h4><a href="#education">Education</a></h4>
       <h4><a href="#experience">Experience</a></h4>
       <h4><a href="#skills">Skills</a></h4>
-      <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')">My Projects</a></h4>
+      <!-- <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')">My Projects</a></h4> -->
     </div>
   </div>
 
@@ -173,7 +179,9 @@
       <div class="modal-content">
           <span class="material-icons close">cancel</span>
           <h1>Experience</h1>
-          <div class="card-title">
+          <button id="expandAllBtn">Expand All</button>
+          <br>
+          <div class="card-title odd">
           <h2>Web Developer <i>@ University Of Sheffield</i></h2>
           </div>
           <div class="card">
@@ -195,7 +203,7 @@
             </p>
           </div>
           <br>
-          <div class="card-title">
+          <div class="card-title odd">
             <h2>Undergraduate Demonstrator @ Uni Of Sheffield</h2>
           </div>
           <div class="card">
@@ -217,7 +225,7 @@
             </p>
           </div>
           <br>
-          <div class="card-title">
+          <div class="card-title odd">
             <h2>Student Mentor @ Code Creators, Enactus Sheffield</h2>
           </div>
           <div class="card">
@@ -307,7 +315,7 @@
                 <li><span>MS Office 365 (+Power Apps, Power Automate, PowerBI)</span></li>
               </ul>
               <ul>
-                <h5>Technical Knowledge</h5>
+                <h4>Technical Knowledge</h4>
                 <li><span>Software Lifecycle Knowledge</span></li>
                 <li><span>OOP Paradigms</span></li>
                 <li><span>Agile Methodologies</span></li>
@@ -325,5 +333,30 @@
 
 
   </div>
+  <!-- <div class="projects-page">
+    <h1>My Projects</h1>
+
+    <div class="project-flexbox">
+      <div class="project">
+        <img src="static/experience.png">
+        <h3> 3D SPACE MUSEUM</h3>
+      </div>
+  
+      <div class="project">
+        <img src="static/experience.png">
+        <h3> SWIDDLE</h3>
+      </div>
+  
+      <div class="project">
+        <img src="static/experience.png">
+        <h3> ATTENDANCE MONITORING SYSTEM</h3>
+      </div>
+  
+      <div class="project">
+        <img src="static/experience.png">
+        <h3> </h3>
+      </div>
+    </div>
+  </div> -->
 </body>
 </html>

@@ -14,4 +14,40 @@ body {
   color: var(--brown);
   margin: 0;
   font-family: 'Helvetica', 'Arial', sans-serif;
+  overflow: overlay;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin: 7px 0;
+  background: rgba(0,0,0,0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 5px;
+}
+
+#alert-bar {
+  background-color: var(--green);
+  text-align: center;
+}
+
+#alert-bar span {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+#alert-bar span:hover {
+  color: var(--brown);
 }

@@ -1,0 +1,29 @@
+.projects-page {
+  background-color: var(--ming);
+  padding: 5vh 1vw;
+}
+
+.projects-page h1 {
+  color: var(--beige);
+}
+
+.project-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.project {
+  background-color: var(--beige);
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+  border: solid 4px var(--brown);
+  box-shadow: 5px 5px var(--green);
+  cursor: pointer;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+
+.project img {
+  width: 85%;
+}

@@ -76,26 +76,6 @@
   text-align: center;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-corner {
-  background: rgba(0,0,0,0);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  margin: 7px 0;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--green);
-  border-radius: 5px;
-}
-
 /* The Close Button */
 .close {
   color: var(--orange);

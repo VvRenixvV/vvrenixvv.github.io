@@ -1,5 +1,5 @@
 .card-title {
-  background-color: var(--green);
+  background-color: var(--yellow);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   margin: 0 0 0 10px;
@@ -9,11 +9,16 @@
   padding: 0.5vw 1vw 0vw 1vw;
   cursor: pointer;
   transition: 0.5s;
+  font-size: 1.5em;
 }
 
 .card-title:hover {
   padding: 1vw 1vw 0.2vw 1vw;
-  background-color: var(--green);
+  background-color: var(--orange);
+}
+
+.card-title span {
+  font-weight: bold;
 }
 
 .active {
@@ -33,7 +38,7 @@
 }
 
 .odd {
-  background-color: var(--yellow);
+  background-color: var(--ming);
 }
 
 #expandAllBtn {

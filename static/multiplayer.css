@@ -1,0 +1,33 @@
+.xp-card {
+    margin-right: 1em;
+    width: 20rem;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid var(--charcoal);
+    height: 65vh;
+    cursor: pointer;
+    transition: width 0.5s ease-out;
+}
+
+.xp-card.active {
+    width: 40rem;
+}
+
+.xp-main, .xp-extra {
+    width: 20rem;
+    flex-shrink: 0;
+    padding: 0.5em;
+}
+
+.xp-cards-container {
+    overflow-x: scroll;
+    width: 1100px;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.xp-cards-div {
+    width: 2000px;
+}
+

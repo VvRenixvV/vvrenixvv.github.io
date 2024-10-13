@@ -3,33 +3,366 @@
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
   <title>Welcome</title>
   <!-- MAIN CSS -->
   <link href="static/main.css" rel="stylesheet" type="text/css">
-  <!-- NAV BAR -->
-  <link href="static/nav.css" rel="stylesheet" type="text/css">
-  <!-- CONTENT CSS -->
-  <link href="static/content.css" rel="stylesheet" type="text/css">
-  <!-- EDUCATION CSS -->
-  <link href="static/education.css" rel="stylesheet" type="text/css">
-  <!-- EXPERIENCE CSS -->
-  <link href="static/experience.css" rel="stylesheet" type="text/css">
-  <!-- SKILLS CSS -->
-  <link href="static/skills.css" rel="stylesheet" type="text/css">
-  <!-- PROJECTS CSS -->
-  <link href="static/projects.css" rel="stylesheet" type="text/css">
   <!-- GOOGLE FONTS/ICONS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- GOOGLE INTER FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- FONTAWESOME KIT -->
   <script src="https://kit.fontawesome.com/69a0735163.js" crossorigin="anonymous"></script>
-  <!-- JAVASCRIPT -->
-  <script src='static/open_modal.js'></script>
-  <script src='static/toggle_card.js'></script>
-  <script src='static/backToTop.js'></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- CUSTOM CSS -->
+  <link href="static/resume.css" rel="stylesheet" type="text/css">
+  <link href="static/campaign.css" rel="stylesheet" type="text/css">
+  <link href="static/multiplayer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div id="alert-bar">
+
+  <div class="container-fluid vh-100">
+
+    <div class="row flex-column vh-100">
+      <!-- HEADER -->
+      <div class="col-12 header">
+        <div class="row page-title-container">
+          <div class="col ps-5">
+            <h1 class="page-title m-0 text-nowrap">
+             software engineer
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME MENU & SCREEN-->
+      <div class="col-12" style="height: 75vh;">
+        <div class="row h-100 align-items-center">
+          <!-- GAME MENU BUTTONS -->
+          <div class="col-3 d-flex flex-column px-4">
+            <p class="section-header-sub">MAIN MENU</p>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <button class="nav-link game-menu-btns" data-bs-toggle="tab" data-bs-target="#resume-tab" aria-current="page" href="#">
+                  Resume
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link game-menu-btns active" data-bs-toggle="tab" data-bs-target="#campaign-tab" href="#">
+                  Campaign
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link game-menu-btns" data-bs-toggle="tab" data-bs-target="#multiplayer-tab" href="#">
+                  Multiplayer
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link game-menu-btns" data-bs-toggle="tab" data-bs-target="#dlc-tab" href="#">
+                  DLC
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link game-menu-btns" data-bs-toggle="tab" data-bs-target="#options-tab" href="#">
+                  OPTIONS
+                </button>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- GAME SCREENS -->
+          <div class="col-9 h-100 ps-0">
+            <div class="tab-content" id="nav-tabContent">
+              <!-- RESUME SCREEN -->
+              <div class="tab-pane fade" id="resume-tab" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
+                <p class="section-header-sub">Rahulkumar R. Rai</p>
+                <h1 class="section-header">Resume</h1>
+                <div>
+                  Hi there! I am a passionate <span class="text-highlight">full-stack developer</span>, graduated with a Bachelor's degree in Software Engineering.
+                  <br/> I've been professionally working on <span class="text-highlight">Web and Desktop</span> applications, including APIs, SPAs and WinForms.
+                  <br/><br/>
+                  In my spare time, I've been hard at work developing my <span class="text-highlight">Game Dev Portfolio</span> using the Unity Game Engine. I'm very eager to 
+                  <br/>start crafting immersive gaming experiences and contributing to innovative projects.
+                </div>
+                <div class="mt-5">
+                  <h5>DESIRABLE ROLES</h5>
+                  <div>
+                    Gameplay Programmer | Tools Programmer | Game UI Designer/Programmer | Unity Programmer | Frontend Web Developer | 
+                  </div>
+                </div>
+              </div>
+              <!-- CAMPAIGN SCREEN -->
+              <div class="tab-pane fade show active" id="campaign-tab" role="tabpanel" aria-labelledby="campaign-tab" tabindex="0">
+                <p class="section-header-sub">Game Development Portfolio</p>
+                <div class="row">
+                  <div class="col-3">
+                    <h1 class="section-header">Campaign</h1>
+                    <h6>Projects</h5>
+                    <div class="nav flex-column sub-menu-btns" id="v-projects" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link active" id="v-projects-1" data-bs-toggle="pill" data-bs-target="#project-1" type="button" role="tab" aria-controls="project-1" aria-selected="true">Stationed On Venus 47</button>
+                      <button class="nav-link" id="v-projects-2" data-bs-toggle="pill" data-bs-target="#project-2" type="button" role="tab" aria-controls="project-2" aria-selected="false">Elysian Shores</button>
+                      <button class="nav-link" id="v-projects-4" data-bs-toggle="pill" data-bs-target="#project-4" type="button" role="tab" aria-controls="project-4" aria-selected="false">CrossBlock</button>
+                      <button class="nav-link" id="v-projects-3" data-bs-toggle="pill" data-bs-target="#project-3" type="button" role="tab" aria-controls="project-3" aria-selected="false">Serendipity</button>
+                    </div>
+                  </div>
+                  <div class="col-9"> 
+                    <div class="tab-content" id="v-projects-content">
+                      <div class="tab-pane fade show active" id="project-1" role="tabpanel" aria-labelledby="v-projects-1" tabindex="0">
+                        <div class="container project-page">
+                          <div class="row">
+                            <div class="col-12">
+                              <div id="slides-venus47" class="carousel slide" data-bs-theme="dark">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div class="d-flex justify-content-center">
+                                      <img src="static/media/venus47-shot-01.png" class="d-block" width="500px">
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="d-flex justify-content-center">
+                                      <img src="static/media/venus47-shot-02.png" class="d-block" width="500px" alt="...">
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="d-flex justify-content-center">
+                                      <img src="static/media/venus47-shot-04.png" class="d-block" width="500px" alt="...">
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#slides-venus47" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#slides-venus47" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mt-3 project-title">Stationed On Venus 47</h4>
+                                <a class="text-center" href="#"><i class="fa-solid fa-play fa-fw"></i>Play on itch.io</a>
+                              </div>
+                              <p>Sci-Fi | Action | Adventure | Prototype</p>
+                              <p>
+                                Your engineer has gone missing, but she left some strange messages before she dissapeared. You
+                                <br> decide you must personally investigate. However, since her dissapearance Vermons have invaded
+                                <br> all outposts and crippled vital operations. It's up to you to unravel the truth, reactivate the fallen towers,
+                                <br> and maybe get your engineer back.
+                              </p>
+                            </div>
+                            <div class="col-12">
+                              <h5>Features</h5>
+                              <p class="section-header-sub">Favourite to program in bold</p>
+                              <ul>
+                                <li>Aim and Throw Grenades</li>
+                                <li>Basic Inventory System</li>
+                                <li>Collectibles: 3 Grenade Types, Log Files, PyroDust</li>
+                                <li>In-Game Interaction System</li>
+                                <li>Health and Regen System</li>
+                                <li>Enemy Object Pooling</li>
+                                <li>In-Game Alert & Event Logs</li>
+                                <li>Multiple Objective System</li>
+                                <li>Enemy AI (Patrol, Chase, Attack)</li>
+                                <li>Diegetic & Non-Diegetic UI</li>
+                                <li>Mouse Invert & Sensitivity Settings</li>
+                                <li>Special Grenades: Sticky & Cryoburst</li>
+                                <li>Story relevant Gameplay</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="project-2" role="tabpanel" aria-labelledby="v-projects-2" tabindex="0">
+                        <h4>Elysian Shores</h4>
+                      </div>
+                      <div class="tab-pane fade" id="project-3" role="tabpanel" aria-labelledby="v-projects-3" tabindex="0">
+                        <div class="container project-page">
+                          <div class="row">
+                            <div class="col-12">
+                              <div id="slides-serendipity" class="carousel slide" data-bs-theme="dark">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div class="d-flex justify-content-center">
+                                      <img src="static/media/serendipity-gameplay-01.gif" class="d-block" width="500px">
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="d-flex justify-content-center">
+                                      <img src="static/media/serendipity-gameplay-02.gif" class="d-block" width="500px">
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#slides-serendipity" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#slides-serendipity" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mt-3 project-title">Serendipity</h4>
+                                <a class="text-center" href="#"><i class="fa-solid fa-play fa-fw"></i>Play on itch.io</a>
+                              </div>
+                              <p>2D | Pixel | Platformer</p>
+                              <p>
+                                This was my first completed game in Unity, so of course it was a platformer. Almost all the assets in the
+                                game are from the Unity Asset Store. The game has simple mechanics like jumping, moving, scoring. But looking back
+                                at the time of development, these did not seem so simple. To add some element of 'fun' to the game, I added a timer 
+                                as well as trophies that can be obtained after completing challenges. Out of curiosity, I also built an in-game store
+                                where players can buy different characters using in-game coins.
+                              </p>
+                            </div>
+                            <div class="col-12">
+                              <h5>Features</h5>
+                              <p class="section-header-sub">Favourite to program in bold</p>
+                              <ul>
+                                <li>Random Pickup Spawner</li>
+                                <li>Throphy & Achievement System</li>
+                                <li>Player Character Selection</li>
+                                <li>Moving platforms & trampolines</li>
+                                <li>Game Music & Sound toggle options</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="project-4" role="tabpanel" aria-labelledby="v-projects-4" tabindex="0">
+                        <h4>CrossBlock</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="tab-pane fade" id="multiplayer-tab" role="tabpanel" aria-labelledby="multiplayer-tab" tabindex="0">
+                <p class="section-header-sub">Experience (XP)</p>
+                <h1 class="section-header">Multiplayer</h1>
+                <div class="container xp-cards-container">
+                  <div class="d-flex p-0 xp-cards-div">
+                    <div class="xp-card">
+                      <div class="xp-main">
+                        <h5>Analyst Programmer</h5>
+                        <p>DICT - Seychelles</p>
+                        <p>2022-Present</p>
+                      </div>
+                      <div class="xp-extra">
+                        <ul>
+                          <li>...</li>
+                          <li>...</li>
+                          <li>...</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="xp-card">
+                      <div class="xp-main">
+                        <h5>Placement Year</h5>
+                        <p>Toyota (GB)</p>
+                        <p>2020-2021</p>
+                      </div>
+                      <div class="xp-extra">
+                        <ul>
+                          <li>Microsoft Power Apps</li>
+                          <li>Microsoft Power Automate</li>
+                          <li>Microsoft PowerBI</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="xp-card">
+                      <div class="xp-main">
+                        <h5>Web Developer</h5>
+                        <p>School of Architecture - University Of Sheffield</p>
+                      </div>
+                    </div>
+                    <div class="xp-card">
+                      <div class="xp-main">
+                        <h5>Web Developer</h5>
+                        <p>School of Architecture - University Of Sheffield</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="dlc-tab" role="tabpanel" aria-labelledby="dlc-tab" tabindex="0">
+                <p class="section-header-sub">Bonus Content</p>
+                <h1 class="section-header">Downloadable Content</h1>
+              </div>
+
+              <div class="tab-pane fade" id="options-tab" role="tabpanel" aria-labelledby="options-tab" tabindex="0">
+                <p class="section-header-sub">Skills</p>
+                <h1 class="section-header">Options</h1>
+                <div class="row">
+                  <div class="col-3">
+                    <h5>TECH</h5>
+                    <div class="teckstack-container">
+                      <ul class="techstack-list">
+                        <li>C#</li>
+                        <li>HTML5 & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <h5>TOOLS</h5>
+                    <div class="teckstack-container">
+                      <ul class="techstack-list">
+                        <li>Visual Studio</li>
+                        <li>Unity Game Engine</li>
+                        <li>Figma</li>
+                        <li>Postman</li>
+                        <li>SQL Server Management Studio</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <h5>FRAMEWORKS</h5>
+                    <div class="teckstack-container">
+                      <ul class="techstack-list">
+                        <li>.NET 6.0/8.0</li>
+                        <li>Blazor (WASM + Server)</li>
+                        <li>.NET WinForms</li>
+                        <li>OpenID Connect & OAuth 2.0</li>
+                        <li>Entity Framework</li>
+                        <li>RESTful APIs</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="col-12 position-absolute bottom-0">
+        <hr class="my-1">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-6 py-1">
+            Developed by Rahulkumar Rai
+          </div>
+          <div class="col-6 text-end py-1">
+            v2.0.1 (c)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div id="alert-bar">
     This website is still under construction, but please feel free to browse through! :)
     <span class="material-icons" onclick="closeAlert()">cancel</span>
   </div>
@@ -44,7 +377,6 @@
         <h4>Software Engineer</h4>
       </div>
       <div class="bar-item" id="other">
-        <!-- <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')" target="_blank">My Projects</a></h4> -->
         <a href="static/Rahulkumar Rakeshkumar Rai.pdf" target="_blank"><button id="download-btn">Download CV</button></a>
       </div>
       <a href="javascript:void(0);" id="nav-icon" onclick="openMenu()">
@@ -61,12 +393,11 @@
       <h4><a href="#education">Education</a></h4>
       <h4><a href="#experience">Experience</a></h4>
       <h4><a href="#skills">Skills</a></h4>
-      <!-- <h4><a onclick="alert('Sorry :( this page is still under construction but coming soon!')">My Projects</a></h4> -->
     </div>
-  </div>
+  </div> -->
 
   <!--BACK TO TOP-->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <div class="content">
     <div class="flexbox">
@@ -339,7 +670,7 @@
     </div>
 
 
-  </div>
+  </div> -->
   <!-- <div class="projects-page">
     <h1>My Projects</h1>
 
@@ -365,5 +696,8 @@
       </div>
     </div>
   </div> -->
+  <!-- CUSTOM JAVASCRIPT -->
+  <script src='static/backToTop.js'></script>
+  <script src='static/multiplayer.js'></script>
 </body>
 </html>

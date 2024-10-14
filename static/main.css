@@ -93,13 +93,25 @@ body {
   margin: 0;
 }
 
+.peek-page-title {
+  animation: moveUpPeek .5s ease-in-out forwards;
+}
+
+.hide-page-title {
+  animation: moveDownHide .5s ease-in-out forwards;
+}
+
 .page-title {
   line-height: 110%;
   overflow: hidden;
   font-size: 17vh;
   font-weight: 600;
   color: var(--charcoal);
-  /* color: var(--light-blue); */
+  transition: transform .5s ease-in-out;
+  cursor: pointer;
+}
+
+.fade-in-move-down {
   opacity: 0;
   transform: translateY(-100px); /* Adjust the starting position as needed */
   animation: fadeInMoveDown 1.5s ease-in-out forwards;
@@ -132,5 +144,23 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes moveUpPeek {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-35px);
+  }
+}
+
+@keyframes moveDownHide {
+  0% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

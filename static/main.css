@@ -94,6 +94,7 @@ body {
 }
 
 .peek-page-title {
+  color: var(--golden-orange) !important;
   animation: moveUpPeek .5s ease-in-out forwards;
 }
 
@@ -107,7 +108,7 @@ body {
   font-size: 17vh;
   font-weight: 600;
   color: var(--charcoal);
-  transition: transform .5s ease-in-out;
+  transition: all .5s ease-in-out;
   cursor: pointer;
 }
 

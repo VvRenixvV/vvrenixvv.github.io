@@ -12,4 +12,19 @@ document.addEventListener("DOMContentLoaded", function() {
       pageTitle.classList.add("hide-page-title");
       pageTitle.classList.remove("peek-page-title");
     })
+
+
+    var gameDevPortLink = document.getElementById("game-dev-port-link");
+    var workXpLink = document.getElementById("work-xp-link");
+
+    var navBtnCampaign = document.getElementById("nav-btn-campaign");
+    var navBtnMultiplayer = document.getElementById("nav-btn-multiplayer");
+
+    gameDevPortLink.addEventListener("click", () => {
+      navBtnCampaign.click();
+    })
+
+    workXpLink.addEventListener("click", () => {
+      navBtnMultiplayer.click();
+    })
 })

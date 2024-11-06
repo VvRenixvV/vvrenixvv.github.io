@@ -1,0 +1,19 @@
+.dlc-card {
+    height: 10em;
+}
+
+
+.dlc-card .card-img-overlay {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.dlc-card .card-img {
+    object-fit: cover;
+    height: 10em;
+}

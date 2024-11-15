@@ -15,18 +15,20 @@
   --golden-orange: #EB4511;
   --cornell-red: #BF211E;
   --rich-black: #011627;
+  --background-color: #f5f5f5; /* whitesmoke */
 
   --charcoal-rgb: 62, 80, 91;
   --light-blue-rgb: 195, 226, 229;
-  --timberwolf: #DBD3D1;
-  --silver: #BFCED1;
+  --timberwolf-rgb: 219, 211, 209;
+  --silver-rgb: 191, 206, 209;
   --golden-orange-rgb: 235, 69, 17;
-  --cornell-red: #BF211E;
+  --cornell-red-rgb: 191, 33, 30;
   --rich-black-rgb: 1, 22, 39;
+  --background-color-rgb: 245, 245, 245; /* whitesmoke */
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--background-color);
   margin: 0;
   font-family: "Inter", sans-serif;
   color: var(--rich-black);
@@ -36,7 +38,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 ::-webkit-scrollbar-corner {

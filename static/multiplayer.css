@@ -7,16 +7,28 @@
     height: 65vh;
     cursor: pointer;
     transition: width 0.5s ease-out;
+    /* background-image: url("/static/media/venus47-skybox.jpg"); */
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
 }
 
 .xp-card.active {
-    width: 40rem;
+    width: 45rem;
 }
 
-.xp-main, .xp-extra {
-    width: 20rem;
+.xp-extra {
+    width: 25rem;
     flex-shrink: 0;
     padding: 0.5em;
+}
+
+.xp-main {
+    width: 20rem;
+    flex-shrink: 0;
+    /* padding: 0.5em; */
+    position: relative;
 }
 
 .xp-cards-container {
@@ -40,10 +52,41 @@
     width: 100%;
     height: 65vh;
     /* right-hand shadow  */
-    box-shadow: inset -100px 0px 30px rgba(var(--background-color-rgb), 0.8);
+    box-shadow: inset -75px 0px 20px rgba(var(--background-color-rgb), 1);
 }
 
 .xp-cards-div {
     width: 2000px;
+    height: 68vh;
 }
 
+.xp-extra {
+    height: auto;
+    overflow-y: scroll;
+}
+
+.xp-main-brief {
+    font-weight: 200;
+}
+
+.xp-main h5, .xp-main p {
+    padding: 0.5em;
+}
+
+.xp-main-org {
+    background-color: var(--light-blue);
+    color: var(--rich-black);
+    padding: 0.5em;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.xp-main-dates {
+    background-color: var(--charcoal);
+    color: var(--background-color);
+    padding: 0.5em 0.25em;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+}

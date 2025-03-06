@@ -112,7 +112,7 @@ body {
   font-weight: 600;
   color: var(--charcoal);
   transition: all .5s ease-in-out;
-  cursor: pointer;
+  cursor: default;
 }
 
 .fade-in-move-down {

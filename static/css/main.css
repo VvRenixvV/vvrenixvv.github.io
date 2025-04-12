@@ -132,12 +132,30 @@ body {
   font-weight: 200;
 }
 
+.section-header-hint {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--golden-orange);
+  padding: 0.1em 0.25em;
+  color: white;
+}
+
 .text-highlight {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: var(--golden-orange);
   cursor: pointer;
   font-weight: 600;
+}
+
+.mouse-keyboard-only {
+  display: none; /* Initially hide the div */
+}
+
+@media (pointer: fine) {
+  .mouse-keyboard-only {
+    display: inline-block; /* Show the div on devices with a fine pointer (likely mouse) */
+  }
 }
 
 @keyframes fadeInMoveDown {

@@ -33,7 +33,7 @@
 
 .xp-cards-container {
     overflow-x: scroll;
-    width: 1100px;
+    /* width: 1100px; */
     scrollbar-width: auto;
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@
 }
 
 .xp-cards-div {
-    width: 2000px;
+    width: 2400px;
     height: 68vh;
 }
 
@@ -66,7 +66,31 @@
 }
 
 .xp-main-brief {
-    font-weight: 200;
+    font-weight: 300;
+    list-style: none;
+    padding-left: 0;
+}
+
+.xp-main-brief li {
+    position: relative;
+    padding-left: 2em; /* space for the custom bullet */
+    margin-bottom: 0.5em;
+}
+
+.xp-main-brief  li::before {
+    content: '+'; /* this will be the plus sign */
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #000; /* square fill color */
+    color: #fff; /* plus sign color */
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    text-align: center;
+    border-radius: 0.1em; /* optional slight rounding */
 }
 
 .xp-main h5, .xp-main p {
@@ -89,4 +113,19 @@
     width: 50%;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+.xp-expand-sign {
+    position: absolute;
+    padding: 0.25em;
+    bottom: 0;
+}
+
+.xp-brief-header {
+    color: var(--rich-black);
+    text-decoration: none;
+}
+
+.xp-brief-header:hover {
+    text-decoration: underline;
 }

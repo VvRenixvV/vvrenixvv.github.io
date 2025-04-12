@@ -5,10 +5,24 @@ xpCards.forEach(card => {
         // toggle open cards
         if (card.classList.contains('active')) {
             card.classList.remove('active');
+            
+            // Scroll the clicked card out of view
+            card.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'end'
+            });
         }
         else {
             closeAllCards();
             card.classList.add('active'); 
+            
+            // Scroll the clicked card into view
+            card.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'start'
+            });
         }
     }) 
 }) 
